@@ -41,11 +41,11 @@ public class Main {
 
     private static boolean equal(int n, int[] arr1, int[] arr2){
         for (int i=0;i<n;i++){
-            if(arr1[i] == arr2[i]){
-                return true;
+            if(arr1[i] != arr2[i]){
+                return false;
             }
         }
-        return false;
+        return true;
 
     }
 
