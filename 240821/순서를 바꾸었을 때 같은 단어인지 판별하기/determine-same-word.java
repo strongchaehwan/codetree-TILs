@@ -1,3 +1,5 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -9,8 +11,10 @@ public class Main {
         char[] chars1 = str1.toCharArray();
         char[] chars2 = str2.toCharArray();
 
-        sort(chars1);
-        sort(chars2);
+       // sort(chars1);
+       // sort(chars2);
+        Arrays.sort(chars1);
+        Arrays.sort(chars2);
 
         if (equals(chars1,chars2)){
             System.out.println("Yes");
