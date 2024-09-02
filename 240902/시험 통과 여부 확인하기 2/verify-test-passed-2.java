@@ -17,7 +17,7 @@ public class Main{
             }
 
             double avg = (double) sum /4;
-            if (avg > 60){
+            if (avg >= 60){
                 System.out.println("pass");
                 count++;
             }else{
