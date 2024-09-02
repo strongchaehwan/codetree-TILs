@@ -21,6 +21,7 @@ public class Main{
         }
         double avg = (double) sum/count;
 
-        System.out.println(sum+" "+avg);
+        System.out.print(sum+" ");
+        System.out.printf("%.1f",avg);
     }
 }
