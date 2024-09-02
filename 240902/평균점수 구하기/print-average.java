@@ -17,7 +17,7 @@ public class Main{
         }
 
         double avg = sum / arr.length;
-        System.out.println(avg);
+        System.out.printf("%.1f",avg);
 
 
 
