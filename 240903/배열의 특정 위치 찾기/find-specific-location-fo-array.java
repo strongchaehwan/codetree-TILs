@@ -12,20 +12,21 @@ public class Main{
 
      int sum = 0;
      int count=0;
-     for(int i=0;i<arr.length;i++){
-        if(arr[i] % 3 == 0){
+
+
+     for(int i = 2; i<=arr.length; i+=3){ //3 6
             sum +=arr[i];
             count++;
-        }
      }
-     int sum1 =0;
-     for (int i=2;i<=arr.length;i+=2){
-          sum1+=i;
-     }
-
-
      double avg = (double) sum / count;
-     System.out.print(sum1+" ");
+
+     int sum2 = 0;
+     for(int i=1;i<arr.length;i+=2){
+         sum2+=arr[i];
+     }
+
+
+     System.out.print(sum2+" ");
      System.out.printf("%.1f",avg);
 
   }
