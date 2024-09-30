@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        String str = "LeeBrosCode";
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
         System.out.println(str);
         System.out.println(str);
 
