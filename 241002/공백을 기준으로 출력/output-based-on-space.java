@@ -6,8 +6,17 @@ public class Main {
         String str = scanner.nextLine();
         String str2 = scanner.nextLine();
 
-        String result = str.replaceAll(" ", "") + str2.replaceAll(" ", "");
-        System.out.println(result);
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != ' ') {
+                System.out.print(str.charAt(i));
+            }
+        }
+
+        for (int i = 0; i < str2.length(); i++) {
+            if (str2.charAt(i) != ' ') {
+                System.out.print(str2.charAt(i));
+            }
+        }
 
     }
 
