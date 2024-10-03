@@ -8,11 +8,14 @@ public class Main {
         int eecount = 0;
         int ebcount = 0;
 
-        if (str.contains("ee")) {
-            eecount++;
-        }
-        if (str.contains("eb")) {
-            ebcount++;
+        for (int i = 0; i < str.length() - 1; i++) {
+            if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'e') {
+                eecount++;
+            }
+
+            if (str.charAt(i) == 'e' && str.charAt(i + 1) == 'b') {
+                ebcount++;
+            }
         }
 
         System.out.println(eecount + " " + ebcount);
