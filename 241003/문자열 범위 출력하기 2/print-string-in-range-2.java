@@ -5,8 +5,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         int n = scanner.nextInt();
+        scanner.nextLine();
 
-        for (int i = str.length() - 1; i > str.length() - 1 - n; i--) {
+        for (int i = str.length() - 1; i >= str.length() - n; i--) {
             System.out.print(str.charAt(i));
         }
 
