@@ -5,10 +5,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         int n = scanner.nextInt();
-        scanner.nextLine();
 
-        for (int i = str.length() - 1; i >= str.length() - n; i--) {
+        int cnt = 0;
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if (cnt >= n) {
+                break;
+            }
             System.out.print(str.charAt(i));
+            cnt++;
+
         }
 
     }
