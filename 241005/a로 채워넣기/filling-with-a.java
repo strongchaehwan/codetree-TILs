@@ -7,16 +7,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
-        char[] c = str.toCharArray();
 
-        for (int i = 0; i < c.length; i++) {
-            if (i == 1 || i == str.length() - 2) {
-                c[i] = 'a';
-            }
-        }
-
-        String newString = String.valueOf(c);
-        System.out.println(newString);
+        str = str.substring(0, 1) + "a" + str.substring(2);
+        str = str.substring(0, str.length() - 2) + "a" + str.substring(str.length() - 1);
+        System.out.println(str);
 
     }
 
