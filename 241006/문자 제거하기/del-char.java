@@ -9,11 +9,18 @@ public class Main {
         while (true) {
             int index = scanner.nextInt();
             if (index > str.length()) {
-                System.out.println(str.charAt(0));
-                break;
+
+                str = str.substring(0, str.length() - 1);
+                System.out.println(str);
+                if (str.length() == 1) {
+                    break;
+                }
             } else {
                 str = str.substring(0, index) + str.substring(index + 1, str.length());
                 System.out.println(str);
+                if (str.length() == 1) {
+                    break;
+                }
             }
 
             // System.out.println(str);
