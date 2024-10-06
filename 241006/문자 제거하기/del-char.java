@@ -8,7 +8,7 @@ public class Main {
 
         while (true) {
             int index = scanner.nextInt();
-            if (index > str.length()) {
+            if (index >= str.length()) {
 
                 str = str.substring(0, str.length() - 1);
                 System.out.println(str);
