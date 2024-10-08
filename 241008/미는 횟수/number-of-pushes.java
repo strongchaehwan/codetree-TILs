@@ -14,7 +14,7 @@ public class Main {
                 break;
             }
         }
-        if (n == str1.length()) {
+        if (n > str1.length()) {
             n = -1;
         }
         System.out.println(n);
