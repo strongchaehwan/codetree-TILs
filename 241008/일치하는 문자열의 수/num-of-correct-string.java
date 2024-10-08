@@ -8,7 +8,7 @@ public class Main {
         String[] strs = new String[n];
 
         for (int i = 0; i < n; i++) {
-            strs[i] = sc.nextLine();
+            strs[i] = sc.next();
         }
         int count = 0;
 
