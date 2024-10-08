@@ -16,7 +16,6 @@ public class Main {
         }
 
         String str = Integer.toString(sum);
-        System.out.println(str);
         str = str.substring(1, str.length()) + str.substring(0, 1);
         System.out.println(str);
 
