@@ -14,10 +14,11 @@ public class Main {
                 break;
             }
         }
-        if (n > str1.length()) {
-            n = -1;
+        if (n == str1.length()) {
+            System.out.println(-1);
+        } else {
+            System.out.println(n);
         }
-        System.out.println(n);
 
     }
 }
