@@ -7,7 +7,7 @@ public class Main {
         int K = scanner.nextInt(); //몇번 반복하는지
         int[] arr = new int[N];
 
-        for (int k = 0; k < K; k++) {
+        for (int k = 0; k < arr.length; k++) {
             arr[k] = 0;
         }
 
