@@ -11,6 +11,11 @@ public class Main {
             int start = scanner.nextInt();//첫번쨰로 블럭을 쌓을 배열의 인덱스
             int end = scanner.nextInt(); //마지막으로 블럭을 쌓을 배열의 인덱스
 
+            if (start < 0 || end >= N) {
+                System.out.println("Invalid index range.");
+                return;
+            }
+
             for (int j = start; j <= end; j++) {
                 arr[j] += 1;
             }
