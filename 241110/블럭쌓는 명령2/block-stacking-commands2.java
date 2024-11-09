@@ -7,10 +7,6 @@ public class Main {
         int K = scanner.nextInt(); //몇번 반복하는지
         int[] arr = new int[N];
 
-        for (int k = 0; k < arr.length; k++) {
-            arr[k] = 0;
-        }
-
         for (int i = 0; i < K; i++) {
             int start = scanner.nextInt();//첫번쨰로 블럭을 쌓을 배열의 인덱스
             int end = scanner.nextInt(); //마지막으로 블럭을 쌓을 배열의 인덱스
