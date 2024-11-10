@@ -1,14 +1,16 @@
 import java.util.Scanner;
 
 public class Main {
+    private static final int OFFSET = 100;
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        int[] arr = new int[100];
+        int[] arr = new int[200];
         int N = scanner.nextInt();
 
         for (int i = 0; i < N; i++) {
-            int start = scanner.nextInt();
-            int end = scanner.nextInt()-1;
+            int start = scanner.nextInt()+OFFSET;
+            int end = scanner.nextInt()+OFFSET-1;
 
             for (int j = start; j <= end; j++) {
                 arr[j] += 1;
