@@ -9,8 +9,8 @@ public class Main {
         int N = scanner.nextInt();
 
         for (int i = 0; i < N; i++) {
-            int start = scanner.nextInt()+OFFSET;
-            int end = scanner.nextInt()+OFFSET;
+            int start = scanner.nextInt();
+            int end = scanner.nextInt();
 
             for (int j = start; j <= end; j++) {
                 arr[j] += 1;
